@@ -10,6 +10,7 @@ body{
 
 .upper{
     height: 300px;
+    margin-top: 20px;
 }
 
 .lower{
@@ -28,3 +29,15 @@ body{
     margin-left: 10px;
 }
 
+#info{
+    margin-top: 130px;
+    text-align: left;
+}
+
+#left{
+    background-color: #e5ffd1;
+}
+
+#right{
+    background-color: #99fdc9;
+}

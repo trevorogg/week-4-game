@@ -27,10 +27,14 @@ window.onload = function () {
     function gameover() {
         if (score == target) {
             alert("YOU WIN");
+            wins++;
+            $("#wins").html("Wins: " + wins);
         }
 
         else if (score > target) {
             alert("YOU LOSE");
+            losses++;
+            $("#losses").html("Losses: " + losses);
         }
     }
 
@@ -45,17 +49,17 @@ window.onload = function () {
 
         $("#score").html(score);
         $("#target").html(target);
+        $("#wins").html("Wins: " + wins);
+        $("#losses").html("Losses: " + losses);
     }
 
-    newGame();
 
-    var score = 0;
-    // generate random target value
-    var target = Math.ceil(Math.random() * 100);
-    // generate value for each crystal
-    
-    $("target").html(target);
-    $("score").html(score);
+    var score;
+    var target;
+    var wins = 0;
+    var losses = 0;
+
+    newGame();
 
     $(document).click(function () {
         gameover()
