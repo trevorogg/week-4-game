@@ -38,6 +38,11 @@ window.onload = function () {
         score = 0;
         target = Math.ceil(Math.random() * 100);
 
+        value1 = newValue();
+        value2 = newValue();
+        value3 = newValue();
+        value4 = newValue();
+
         $("#score").html(score);
         $("#target").html(target);
     }
@@ -48,11 +53,7 @@ window.onload = function () {
     // generate random target value
     var target = Math.ceil(Math.random() * 100);
     // generate value for each crystal
-    var value1 = newValue();
-    var value2 = newValue()
-    var value3 = newValue()
-    var value4 = newValue();
-
+    
     $("target").html(target);
     $("score").html(score);
 
